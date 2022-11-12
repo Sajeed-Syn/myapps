@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin:50px;
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    background-color: greenyellow;
+}
+table{
+    width: 100%;
+}
+tr:hover{
+    background-color: rgb(252, 0, 0);
+}
+tr:nth-child(odd){
+    background-color: lightcoral;
+    color: yellow;
+}
+tr:nth-child(even){
+    background-color: lightgreen;
+    color: blue;
+}

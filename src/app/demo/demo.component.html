@@ -1,0 +1,16 @@
+<h4>Data Binding</h4>
+<h6>String Interpolation</h6>
+Name is {{name}}<br>
+Age is {{age}} <br>
+<p>Add = {{40+20}}</p>
+<p>{{age>25 ? 'He is eligible for marriage':'Not eligible'}}</p>
+<p>Sum = {{sum()}}</p>
+<hr>
+<h6>Property Binding</h6>
+<input type="text" [value]="city" /> <br>
+<input type="button" [value]="name" /> <br><br>
+<input type="button" value="Click" [disabled]="age > 25 ? true:false" />
+<br><br><h6>Event Binding</h6>
+<input type="button" value="Display" (click)="Show()" />
+<h6>Two way binding</h6>
+<input type="text" [(ngModel)]="name" />

@@ -1,0 +1,41 @@
+<h2>{{msg}}</h2>
+<h4>Days of Week</h4>
+<ul *ngFor="let day of weekdays;let i=index">
+    <li>{{i+1}}.{{day}}</li>
+</ul>
+<ng-container *ngIf="age > 25;else elseTemplate">
+    <p>Suitable for Marriage</p>
+</ng-container>
+<ng-template #elseTemplate>
+    <p>Getting Ready for Marriage</p>
+</ng-template>
+<hr>
+<ul *ngFor="let day of weekdays">
+    <ng-container *ngIf="(day == 'sunday' ||day == 'saturday');else elseTemplate">
+        <li style="color:red">{{day}} is a weekend</li>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <li style="color:blue">{{day}} is a working day</li>
+    </ng-template>
+</ul>
+<hr>
+<h2>Employee Listing</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Dept</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of emplist">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.dept}}</td>
+        </tr>
+    </tbody>
+</table>
+<b>Total Salare = {{GetTotal()}}</b>
