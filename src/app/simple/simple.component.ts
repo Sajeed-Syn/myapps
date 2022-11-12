@@ -12,7 +12,7 @@ export class SimpleComponent implements OnInit {
 
   emplist: Employee[] = [
     { id: 1010, name: 'Tom', salary: 60000, dept: 'IT' },
-    { id: 1020, name: 'Bob', salary: 70000, dept: 'HR' },
+    { id: 1020, name: 'Bob', salary: 70000, dept: 'Fin' },
     { id: 1030, name: 'Ali', salary: 50000, dept: 'Fin' },
     { id: 1040, name: 'Sam', salary: 40000, dept: 'IT' },
     { id: 1050, name: 'Raj', salary: 30000, dept: 'Fin' },
